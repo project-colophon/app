@@ -50,7 +50,7 @@
     "@octokit/rest": "^16.27.1",
     "@octokit/webhooks": "^6.2.2",
     "body-parser": "^1.19.0",
-    "connect-pg-simple": "^5.0.0",
+    "connect-pg-simple": "^6.0.1",
     "cookie-parser": "^1.4.4",
     "dayjs": "^1.8.14",
     "dotenv": "^8.0.0",
