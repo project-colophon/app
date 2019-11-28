@@ -20,8 +20,8 @@ exports.index = async function repository (req, res) {
     }
   }
 
-  const { rows: [ repository ] } = await db.repository.get(org, name)
-  const { rows: [ installation ] } = await db.installation.get(org)
+  const { rows: [repository] } = await db.repository.get(org, name)
+  const { rows: [installation] } = await db.installation.get(org)
 
   if (!repository) {
     // guest mode?
@@ -30,7 +30,7 @@ exports.index = async function repository (req, res) {
 
   // guest mode on a private repo?
   if (guest && repository.private) {
-    return res.render(`repository/public/404`, { org, name })
+    return res.render('repository/public/404', { org, name })
   }
 
   // errors placeholder
@@ -55,7 +55,7 @@ exports.scan = async function (req, res) {
     return res.redirect('/dashboard')
   }
 
-  const { rows: [ repository ] } = await db.repository.get(org, name)
+  const { rows: [repository] } = await db.repository.get(org, name)
 
   // TODO check for existence
 

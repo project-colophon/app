@@ -23,7 +23,7 @@ dashboard.get('/', async function (req, res) {
     return res.render('dashboard/404')
   }
 
-  let { rows } = await db.list(userInstallations)
+  const { rows } = await db.list(userInstallations)
 
   if (rows.length === 0) {
     return res.render('dashboard/404')
