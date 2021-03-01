@@ -60,7 +60,7 @@
     "passport": "^0.4.0",
     "passport-github": "^1.1.0",
     "pg": "^7.11.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.2",
     "tabler-ui": "^0.0.34",
     "tap": "^14.2.0",
     "uncaught-extender": "^1.0.1",
